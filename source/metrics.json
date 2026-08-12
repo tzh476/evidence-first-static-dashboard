@@ -1,0 +1,23 @@
+{
+  "title": "Transit service snapshot",
+  "sources": [
+    {
+      "name": "Service API",
+      "state": "ok",
+      "observed_at": "2026-08-10T23:55:00+00:00",
+      "metrics": {"active_routes": 42, "delayed_routes": 1}
+    },
+    {
+      "name": "Capacity feed",
+      "state": "stale",
+      "observed_at": "2026-08-08T00:00:00+00:00",
+      "metrics": {"available_vehicles": 18}
+    },
+    {
+      "name": "Incident feed",
+      "state": "failed",
+      "observed_at": null,
+      "error": "HTTP 503 from upstream"
+    }
+  ]
+}
