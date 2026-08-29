@@ -1,0 +1,16 @@
+name: evidence-first-static-dashboard
+region: nyc
+
+static_sites:
+  - name: dashboard
+    environment_slug: python
+    git:
+      repo_clone_url: https://github.com/tzh476/evidence-first-static-dashboard.git
+      branch: master
+    build_command: >-
+      python3 -m unittest test_generate_dashboard.py &&
+      python3 generate_dashboard.py
+      --input source/metrics.json
+      --output public
+    output_dir: public
+    source_dir: /
