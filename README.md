@@ -24,6 +24,14 @@ python3 generate_dashboard.py \
 python3 -m unittest test_generate_dashboard.py
 ```
 
+## Deploy on DigitalOcean
+
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/tzh476/evidence-first-static-dashboard/tree/master)
+
+The repository includes an App Platform specification and a one-click deploy
+template. The build runs the unit tests before generating the static files in
+`public/`; no runtime service, database, secret, or paid component is required.
+
 The checked-in fixture intentionally contains one fresh source, one stale
 source, and one failed source. It demonstrates that the generated HTML carries
 a visible warning and preserves the upstream error instead of converting it to
